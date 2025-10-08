@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shorewise - Banking and Fintech Platform</title>
+    <!-- Font Awesome Free -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="scss/frontendMain.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link href="scss/shorewiseMain.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Compact sticky header (appears on scroll) -->
+        <header id="compact-header" aria-hidden="true">
+            <div class="logo">
+                <a href="index.html"><img src="images/shorewise-logo.png" alt="Shorewise logo"></a>
+            </div>
+            <div class="compact-actions">
+                <nav class="navbar navbar-expand-lg navbar-light whiteBg" aria-label="Primary">
+                    <div class="container-fluid">
+                        <!-- compact header navbar (unique collapse id to avoid clashing with main header) -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#compactNavbarContent" aria-controls="compactNavbarContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="compactNavbarContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="products.html" >Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html" >Services</a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="products.html#wiseAi">Wise AI</a></li>
+                                        <li><a class="dropdown-item" href="products.html#wiseConnect">Wise
+                                                Connect</a></li>
+                                        <li><a class="dropdown-item" href="products.html#wiseChannel">Wise
+                                                Channel</a></li>
+                                    </ul>
+                                </li> -->
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="services.html#digitaltransformation">Digital
+                                                Transformation</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html#fintechsolutions">Fintech
+                                                Solutions</a></li>
+                                        <li><a class="dropdown-item" href="services.html#greenfield">Greenfield</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html#tradefinance">Trade Finance</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html#corebanking">Core Banking</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html#datamanagement">Data
+                                                Management</a></li>
+                                    </ul>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <button class="btn btn-lg btnPrimary" type="button">Get a Quote</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <!-- <nav aria-label="Primary" class="d-none d-md-block">
+                        <a href="aboutus.html" class="me-3 text-muted">About</a>
+                        <a href="contactus.html" class="me-3 text-muted">Contact</a>
+                    </nav>
+                    <button class="btn btn-sm btnPrimary" type="button">Get a Quote</button> -->
+            </div>
+        </header>
+        <header id="main-header" class="normal">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2 logo">
+                    <div class="">
+                        <img src="images/shorewise-logo.png" alt="Shorewise Logo">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="row topHeader">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 noPaddingLeft">
+                            <span>Need Help? Request A Callback</span>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 noPaddingLeft">
+                            <ul class="float-end">
+                                <li class="social-icons">
+                                    <a href="https://www.facebook.com" target="_blank" class="facebook"
+                                        aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com" target="_blank" class="linkedin"
+                                        aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.twitter.com" target="_blank" class="twitter"
+                                        aria-label="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank" class="instagram"
+                                        aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 noPaddingLeft">
+                            <nav class="navbar navbar-expand-lg whiteBg">
+                                <div class="container-fluid">
+                                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="products.html">Products</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="services.html" >Services</a>
+                                            </li>
+                                            <!-- <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Products
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="products.html#wiseAi">Wise AI</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="products.html#wiseConnect">Wise
+                                                            Connect</a></li>
+                                                    <li><a class="dropdown-item" href="products.html#wiseChannel">Wise
+                                                            Channel</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <!-- <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Services
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item"
+                                                            href="digitaltransformation.html">Digital Transformation</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="fintechsolutions.html">Fintech
+                                                            Solutions</a></li>
+                                                    <li><a class="dropdown-item" href="greenfield.html">Greenfield</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="tradefinance.html">Trade
+                                                            Finance</a></li>
+                                                    <li><a class="dropdown-item" href="corebanking.html">Core
+                                                            Banking</a></li>
+                                                    <li><a class="dropdown-item" href="datamanagement.html">Data
+                                                            Management</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="aboutus.html">About Us</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="contactus.html">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                        <form class="d-flex" role="search">
+                                            <button class="btn btn-lg btnPrimary" type="button">Get a Quote</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="header-inner">
+                <div class="logo">
+                    <img src="images/shorewise-logo.png" alt="Shorewise Logo">
+                </div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="menu-toggle">☰</div>
+            </div> -->
+        </header>
+        <!-- Hero (to show normal header design clearly) -->
+
+        <div class="breadcrumb-area gradient-bg bg-cover shadow dark text-light text-center"
+            style="background-image: url(./images/products.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h1>
+                            Products </h1>
+                        <ul class="breadcrumb">
+                            <nav class=""><a href="index.html">Home</a>&nbsp;/&nbsp;Shorewise Produtcs</nav>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section id="ourSolutions">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12 col-lg-12 col-12">
+                            <span class="headerTitle text-center">
+                                <h6 class="titleHeader">OUR SOLUTIONS</h6>
+                                <p>Cutting-edge solutions delivered!</p>
+                            </span>
+
+                            <div class="row row-cols-3 productsDetails">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="container-fill">
+                                        <div class="iconsProducts">
+                                            <!-- <div class="svgConnect"></div> -->
+                                            <img src="./images/wiseConnect.jpg">
+                                            <!-- <i class="fa-solid fa-code-compare"></i> -->
+                                            <!-- <i class="fa-solid fa-hexagon-nodes"></i> -->
+                                        </div>
+                                        <div class="contentProducts">
+                                            <h4>Wise Connect – Smart Middleware Connectors</h4>
+                                            <p>
+
+                                                Wise Connect is a <strong> smart middleware platform </strong>designed
+                                                to simplify complex
+                                                integrations between core systems and applications. With its no-code and
+                                                low-code capabilities, it empowers organizations to build, deploy, and
+                                                manage integrations effortlessly—without deep technical expertise.
+<!-- 
+                                                By intelligently automating data flow and process connectivity, Wise
+                                                Connect enables up to <strong>70% reduction in both upstream and
+                                                    downstream
+                                                    integration efforts,</strong> improving agility, scalability, and
+                                                time-to-market
+                                                for digital initiatives.
+
+                                                It seamlessly bridges legacy, cloud, and modern applications, allowing
+                                                enterprises to <strong>connect systems, transform data, and orchestrate
+                                                    workflows—all</strong> from a unified interface. -->
+                                            </p>
+                                            <ul>
+                                                <li>Integrating legacy banking systems takes months and costs a
+                                                    fortune. CIOs dread vendor lock-in and slow deployment.
+                                                </li>
+                                                <li>
+                                                    Wise Connect is a no-code, API-first middleware that connects any
+                                                    system in hours- not days—not months—without custom coding.
+                                                </li>
+                                                <li>
+                                                    80% reduction in upstream and downstream integration costs, 70%
+                                                    faster go-lives, and virtually zero dependency on external IT
+                                                    resources.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container-fill">
+                                        <div class="iconsProducts">
+                                            <img src="./images/wiseChannel.jpg">
+                                            <!-- <i class="fa-solid fa-chart-column"></i> -->
+                                            <!-- <img src="./images/chart-column-solid-full.svg"> -->
+                                        </div>
+                                        <div class="contentProducts">
+                                            <h4>Wise Channel – Real-Time Dashboards</h4>
+                                            <p>
+                                                Wise Channel offers <strong>intelligent, real-time dashboards</strong>  that provide a
+                                                unified view of critical trade and financial data. Designed for agility
+                                                and insight, it empowers users to <strong>track transactions, monitor
+                                                performance, and make data-driven decisions</strong> instantly.
+                                            </p>
+                                            <ul>
+                                                <li>Wise Channel connects all trade finance and banking systems and
+                                                    streams real time currency conversions when creating a new Bank
+                                                    Guarantee or Letter of Credit. No technical trainings needed.</li>
+                                                <li>Empowers decision-makers with instant clarity, improves operational
+                                                    response by 65%, and reduces manual reporting effort.</li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="container-fill">
+                                        <div class="iconsProducts">
+                                            <img src="./images/WiseAiApp.jpg">
+                                            <!-- <img src="./images/language-solid.svg"> -->
+                                            <!-- <i class="fa-solid fa-language"></i> -->
+                                        </div>
+                                        <div class="contentProducts">
+                                            <h4>Wise AI Virtual Assistant</h4>
+                                            <p>
+                                                Wise AI is an advanced, <strong> hyper-realistic virtual assistant
+                                                </strong>designed to
+                                                revolutionize customer interaction. It can <strong>converse naturally in
+                                                    40+
+                                                    languages,</strong> including <strong>15 Indian languages,</strong>
+                                                providing personalized,
+                                                human-like engagement across voice and text channels.
+                                            </p>
+                                            <ul>
+                                                <li>Most digital assistants are nothing but talking heads with no
+                                                    intelligence, they lack personality, and fail to engage diverse
+                                                    customers. Executives fear low adoption and cultural disconnect.
+                                                </li>
+                                                <li>Wise AI is a GenAI-driven multilingual assistant with an actual
+                                                    human face, with customizable avatars that look and speak like real
+                                                    humans—in 40+ languages including Indian National languages.</li>
+                                                <li>Boosts customer satisfaction by 5x, reduces call center loads by
+                                                    40%, and personalizes every digital interaction.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contactAds">
+                <!-- <div class="container"> -->
+                <div>
+                    <h4>Ready to transform your banking operations? </h4>
+                    <span> Discover how Shorewise elevates efficiency, streamlines processes, and drives innovation at
+                        every level of your financial institution.</span>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-lg btnPrimary">Contact Us</button>
+                </div>
+
+            </section>
+            <section id="footer">
+                <div>
+                    <div class="footerlogo">
+                        <img src="images/shorewise-logo.png" alt="Shorewise Logo" class="footer-logo">
+                        <p>'The Future Won’t Wait. <br>Let’s Talk Today.'</p>
+                    </div>
+                    <div class="footerlinks">
+                        <h6>Services</h6>
+                        <ul class="footerList">
+                            <li><a class="dropdown-item" href="services.html#digitaltransformation">Digital
+                                    Transformation</a>
+                            </li>
+                            <li><a class="dropdown-item" href="services.html#fintechsolutions">Fintech Solutions</a>
+                            </li>
+                            <li><a class="dropdown-item" href="services.html#greenfield">Greenfield</a>
+                            </li>
+                            <li><a class="dropdown-item" href="services.html#tradefinance">Trade Finance</a></li>
+                            <li><a class="dropdown-item" href="services.html#corebanking">Core Banking</a></li>
+                            <li><a class="dropdown-item" href="services.html#datamanagement">Data Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerlinks">
+                        <h6>Links</h6>
+                        <ul class="footerList">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascrtipt:;">Products</a></li>
+                            <li><a href="javascrtipt:;">Services</a></li>
+                            <li><a href="javascrtipt:;">About Shorewise</a></li>
+                            <li><a href="javascrtipt:;">Contact Shorewise</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerContact">
+                        <h6>Contact Info</h6>
+                        <p>5919 Trussville Crossings Pkwy, new
+                            Dusting town, Austria</p>
+                        <ul class="footerContactList">
+                            <li>
+                                <div class="icons"><i class="fa fa-clock"></i></div>
+                                <div class="iconContents">
+                                    <h5>Opening Hours:</h5>
+                                    <p>Mon, 10:00 AM - 6:00 PM</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icons"><i class="fa fa-clock"></i></div>
+                                <div class="iconContents">
+                                    <h5>Phone:</h5>
+                                    <p>+91 00000 00000 </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    © 2025 Shorewise. All Rights Reserved.
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Toggle the compact sticky header on scroll
+        const compactHeader = document.getElementById('compact-header');
+        const compactNavbarContent = document.getElementById('compactNavbarContent');
+        let lastScrollY = window.scrollY;
+        const showAt = 120; // px scrolled before showing compact header
+
+        function updateCompactHeader() {
+            const currentY = window.scrollY;
+            const isMobile = window.innerWidth < 768; // treat below md as mobile
+
+            if (currentY > showAt && currentY > lastScrollY) {
+                // scrolling down past threshold -> show compact header
+                compactHeader.classList.add('show');
+                compactHeader.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('compact-header-visible');
+
+                // Note: do not auto-open the mobile menu; user should tap the toggler.
+            } else if (currentY <= showAt) {
+                // near top -> hide
+                compactHeader.classList.remove('show');
+                compactHeader.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('compact-header-visible');
+
+                // keep menu state controlled by the user; don't force close here
+            }
+            lastScrollY = currentY;
+        }
+
+        window.addEventListener('scroll', updateCompactHeader, { passive: true });
+
+
+        const swiper = new Swiper(".my-carousel", {
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            effect: "fade", // Try "slide", "fade", "cube", "coverflow"
+            fadeEffect: { crossFade: true },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            parallax: true,
+        });
+
+
+
+        // Get the button
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        // Show button on scroll
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top on click
+        scrollTopBtn.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+
+    </script>
+</body>
+
+</html>

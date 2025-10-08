@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shorewise - Banking and Fintech Platform</title>
+    <!-- Font Awesome Free -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="scss/frontendMain.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <link href="scss/shorewiseMain.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Compact sticky header (appears on scroll) -->
+        <header id="compact-header" aria-hidden="true">
+            <div class="logo">
+                <a href="index.html"><img src="images/shorewise-logo.png" alt="Shorewise logo"></a>
+            </div>
+            <div class="compact-actions">
+                <nav class="navbar navbar-expand-lg navbar-light whiteBg" aria-label="Primary">
+                    <div class="container-fluid">
+                        <!-- compact header navbar (unique collapse id to avoid clashing with main header) -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#compactNavbarContent" aria-controls="compactNavbarContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="compactNavbarContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html"
+                                        class="active">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html"
+                                        class="">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html"
+                                        class="">Services</a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="products.html#wiseAi">Wise AI</a></li>
+                                        <li><a class="dropdown-item" href="products.html#wiseConnect">Wise
+                                                Connect</a></li>
+                                        <li><a class="dropdown-item" href="products.html#wiseChannel">Wise
+                                                Channel</a></li>
+                                    </ul>
+                                </li> -->
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="services.html#digitaltransformation">Digital
+                                                Transformation</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html#fintechsolutions">Fintech
+                                                Solutions</a></li>
+                                        <li><a class="dropdown-item" href="services.html#greenfield">Greenfield</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html#tradefinance">Trade Finance</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html#corebanking">Core Banking</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="services.html#datamanagement">Data
+                                                Management</a></li>
+                                    </ul>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <button class="btn btn-lg btnPrimary" type="button">Get a Quote</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <!-- <nav aria-label="Primary" class="d-none d-md-block">
+                        <a href="aboutus.html" class="me-3 text-muted">About</a>
+                        <a href="contactus.html" class="me-3 text-muted">Contact</a>
+                    </nav>
+                    <button class="btn btn-sm btnPrimary" type="button">Get a Quote</button> -->
+            </div>
+        </header>
+        <header id="main-header" class="normal">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2 logo">
+                    <div class="">
+                        <img src="images/shorewise-logo.png" alt="Shorewise Logo">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10">
+                    <div class="row topHeader">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 noPaddingLeft">
+                            <span>Need Help? Request A Callback</span>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 noPaddingLeft">
+                            <ul class="float-end">
+                                <li class="social-icons">
+                                    <a href="https://www.facebook.com" target="_blank" class="facebook"
+                                        aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com" target="_blank" class="linkedin"
+                                        aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.twitter.com" target="_blank" class="twitter"
+                                        aria-label="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank" class="instagram"
+                                        aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 noPaddingLeft">
+                            <nav class="navbar navbar-expand-lg whiteBg">
+                                <div class="container-fluid">
+                                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="index.html"
+                                                    class="active">Home</a>
+                                            </li>
+                                             <li class="nav-item">
+                                    <a class="nav-link" href="products.html"
+                                        class="">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html"
+                                        class="">Services</a>
+                                </li>
+                                            <!-- <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Products
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="products.html#wiseAi">Wise AI</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="products.html#wiseConnect">Wise
+                                                            Connect</a></li>
+                                                    <li><a class="dropdown-item" href="products.html#wiseChannel">Wise
+                                                            Channel</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <!-- <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Services
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item"
+                                                            href="digitaltransformation.html">Digital Transformation</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="fintechsolutions.html">Fintech
+                                                            Solutions</a></li>
+                                                    <li><a class="dropdown-item" href="greenfield.html">Greenfield</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="tradefinance.html">Trade
+                                                            Finance</a></li>
+                                                    <li><a class="dropdown-item" href="corebanking.html">Core
+                                                            Banking</a></li>
+                                                    <li><a class="dropdown-item" href="datamanagement.html">Data
+                                                            Management</a></li>
+                                                </ul>
+                                            </li> -->
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="aboutus.html">About Us</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="contactus.html">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                        <form class="d-flex" role="search">
+                                            <button class="btn btn-lg btnPrimary" type="button">Get a Quote</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="header-inner">
+                <div class="logo">
+                    <img src="images/shorewise-logo.png" alt="Shorewise Logo">
+                </div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="menu-toggle">☰</div>
+            </div> -->
+        </header>
+        <!-- Hero (to show normal header design clearly) -->
+        <div class="hero">
+            <div class="swiper my-carousel">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide banner-style-one">
+                        <div class="banner-angle-shape">
+                            <div class="shape-item"></div>
+                            <div class="shape-item"></div>
+                            <div class="shape-item"></div>
+                        </div>
+                        <!-- <video src="https://www.youtube.com/watch?v=QGJwzZQwzZQ" loop muted autoplay>
+                            </video> -->
+                        <img src="https://picsum.photos/1600/900?random=1" alt="Slide 1" />
+                        <div class="slide-content" data-swiper-parallax="-100">
+                            <h2>Meet the Future of Banking and FinTech, Today.</h2>
+                            <p>'What if your technology could think and speak your
+                                customer’s language on Day One?.</p>
+
+                            <button class="btn btn-primary btn-lg">See Our Solutions</button>
+                            <button class="btn btn-secondary btn-lg">Book a Free Demo</button>
+                        </div>
+
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="https://picsum.photos/1600/900?random=2" alt="Slide 2" />
+                        <div class="slide-content" data-swiper-parallax="-100">
+                            <h2>Modern Design</h2>
+                            <p>Responsive, sleek, and user-friendly layouts.</p>
+
+                            <button class="btn btn-primary btn-lg">See Our Solutions</button>
+                            <button class="btn btn-secondary btn-lg">Book a Free Demo</button>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="https://picsum.photos/1600/900?random=3" alt="Slide 3" />
+                        <div class="slide-content" data-swiper-parallax="-100">
+                            <h2>Powerful Performance</h2>
+                            <p>Optimized experiences for every device.</p>
+
+                            <button class="btn btn-primary btn-lg">See Our Solutions</button>
+                            <button class="btn btn-secondary btn-lg">Book a Free Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation & Pagination -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="content">
+            <section id="aboutcompany">
+                <!-- <div class="company-background-overlay"></div> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="row">
+                                <div class="aboutUs-card col-sm-4 col-md-4 col-lg-6">
+                                    <div class="aboutUs-item">
+                                        <img decoding="async" src="./images/whoweare-one.jpg"
+                                            alt="Empowering Better Decisions">
+                                    </div>
+                                </div>
+                                <div class="aboutUs-card  col-sm-4 col-md-4 col-lg-6">
+                                    <div class="aboutUs-item">
+                                        <img decoding="async" src="./images/whoweare-two.jpg" alt="Outcome-Driven Tech">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <h6 class="titleHeader">WHO WE ARE</h6>
+                            <p>
+                                We are a forward-thinking fintech company committed to empowering banks and financial
+                                institutions with innovative digital solutions. Our focus is on transforming financial
+                                operations through technology, data intelligence, and automation — enabling secure,
+                                efficient, and customer-centric banking experiences.
+                            </p>
+                            <ul class="short-feature-list">
+                                <li>
+                                    <h4><a href="javascript:;">IT Consultancy</a>
+                                    </h4>
+                                    <p>
+                                        Providing end-to-end IT consultancy services to help businesses innovate,
+                                        optimize, and achieve digital excellence. </p>
+                                </li>
+                                <li>
+                                    <h4><a href="javascript:;">Cyber Security</a>
+                                    </h4>
+                                    <p>
+                                        Securing digital financial ecosystems with cutting-edge cybersecurity strategies
+                                        and real-time threat protection.</p>
+                                </li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-6">
+
+                                </div>
+                                <div class="col-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="ourSolutions">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-12"><img src="./images/index-solutions.png"
+                                style="width: 95%;" /></div>
+                        <div class="col-md-6 col-lg-6 col-12">
+                            <span class="headerTitle text-center">
+                                <h6 class="titleHeader">OUR SOLUTIONS</h6>
+                                <p>Cutting-edge solutions delivered!</p>
+                            </span>
+                            <div class="indexSolContents">
+                                <h4>Wise Connect - <span>No-code and Low-code solutions</span></h4>
+                                <span>smart middleware that lets organizations connect any core system effortlessly,
+                                    enabling up to 70% reduction in both upstream and downstream integration
+                                    efforts.</span>
+
+                                <h4>Wise Channel <span>Smart and Effective </span></h4>
+                                <span>
+                                    Smart and effective front end solution for Trade finance end customers. This has
+                                    real time currency conversion and many more features.
+                                </span>
+
+                                <h4>Wise AI <span>Hyper-realistic AI assistant</span></h4>
+                                <span>
+                                    capable of conversing in 40+ languages—including 15 Indian languages—leading to a
+                                    50% reduction in manpower needs and time, and achieving a fivefold increase in
+                                    customer engagement.
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="indexInfo">
+                <div class="infoLeft bg-gradientInfo01">
+                    <h5>1000+</h5>
+                    <span>Customer Satisfaction</span>
+                    <p>Mentioning horrible margaret suitable he followed speedily. Indeed vanity excuse or
+                        mr lovers of on. By offer scale.</p>
+                </div>
+                <div class="infoRight bg-gradientInfo">
+                    <h5>45K</h5>
+                    <span>Customers Worldwide</span>
+                    <p>Mentioning horrible margaret suitable he followed speedily. Indeed vanity excuse or
+                        mr lovers of on. By offer scale.</p>
+                </div>
+            </section>
+
+            <section id="indexServices">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <span class="headerTitle text-center">
+                            <h6 class="titleHeader">Discover Our Expertise</h6>
+                            <p>Innovation, strategy, and design that drive results.</p>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row row-cols-3">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="container-fill">
+                                <span class="iconsServices">
+                                    <img src="images/digital-transformation.svg" alt="Digital Transformation"
+                                        width="100" height="100">
+                                </span>
+
+                                <p>Redefine your business processes with data-driven insights, agility, and next-gen
+                                    digital solutions.
+                                </p>
+                                <div class="bottom">
+                                    <h4>Digital Transformation</h4>
+                                    <a href="javascript:;"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="container-fill">
+                                <span class="iconsServices">
+                                    <img src="images/fintech02.svg" alt="Fintech Solutions" width="100" height="100">
+                                </span>
+
+                                <p>Bridging finance and technology to deliver smarter, faster, and safer digital
+                                    payments.
+                                </p>
+                                <div class="bottom">
+                                    <h4>Fintech Solutions</h4>
+                                    <a href="javascript:;"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="container-fill">
+                                <span class="iconsServices">
+                                    <img src="images/mobile-development.svg" alt="Greenfield App Development"
+                                        width="100" height="100">
+                                </span>
+
+                                <p>Transforming fresh ideas into powerful applications that redefine digital
+                                    experiences.
+                                </p>
+                                <div class="bottom">
+                                    <h4>Greenfield App Development</h4>
+                                    <a href="javascript:;"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="container-fill">
+                                <span class="iconsServices">
+                                    <img src="images/financial.svg" alt="Trade Finance" width="100" height="100">
+                                </span>
+
+                                <p>Digitizing trade operations to simplify processes, reduce risk, and accelerate
+                                    cross-border growth.
+                                </p>
+                                <div class="bottom">
+                                    <h4>Trade Finance</h4>
+                                    <a href="javascript:;"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="container-fill">
+                                <span class="iconsServices">
+                                    <img src="images/bank.svg" alt="Core Banking" width="100" height="100">
+                                </span>
+
+                                <!-- <p>Seamless banking operations powered by secure, centralized systems that enhance efficiency and customer experience. -->
+                                <p>Powering next-gen banking with real-time processing and seamless customer
+                                    experiences.
+                                </p>
+                                <div class="bottom">
+                                    <h4>Core Banking</h4>
+                                    <a href="javascript:;"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="container-fill">
+                                <span class="iconsServices">
+                                    <img src="images/data-collection.svg" alt="Data Management" width="100"
+                                        height="100">
+                                </span>
+
+                                <!-- <p>Seamless banking operations powered by secure, centralized systems that enhance efficiency and customer experience. -->
+                                <p>Transform raw data into a strategic asset through structured management and
+                                    intelligent automation.
+                                </p>
+                                <div class="bottom">
+                                    <h4>Data Management</h4>
+                                    <a href="javascript:;"> <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contactAds">
+                <!-- <div class="container"> -->
+                <div>
+                    <h4>Ready to transform your banking operations? </h4>
+                    <span> Discover how Shorewise elevates efficiency, streamlines processes, and drives innovation at
+                        every level of your financial institution.</span>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-lg btnPrimary">Contact Us</button>
+                </div>
+
+            </section>
+            <section id="chooseUs">
+                <!-- <div class="company-background-overlay"></div> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <h6 class="titleHeader">Why choose Shorewise</h6>
+                            <p>
+                                Delivering reliability, innovation, and excellence — every step of the way.
+                            </p>
+                            <ul class="short-feature-list">
+                                <li>
+                                    <h4><a href="javascript:;">20+</a>
+                                    </h4>
+                                    <p>
+                                        We have Banking and Fintech experts, with 20+ years of experience. </p>
+                                </li>
+                                <li>
+                                    <h4><a href="javascript:;">AI</a>
+                                    </h4>
+                                    <p>
+                                        Our AI use new age technologies to solve multiple business problems. </p>
+                                </li>
+                                <li>
+                                    <h4><a href="javascript:;">Human Trust</a>
+                                    </h4>
+                                    <p>
+                                        Built for any available industry, shaped for human trust, scaled for global
+                                        Enterprise.</p>
+                                </li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-6">
+
+                                </div>
+                                <div class="col-6"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="row">
+                                <div class="chooseUs-card col-md-6">
+                                    <div class="chooseUs-item">
+                                        <img decoding="async" src="./images/decision-making.svg"
+                                            alt="Empowering Better Decisions">
+                                        <span>Empowering Better Decisions</span>
+                                        <h4>Product solves a deep-seated decision-making pain.</h4>
+                                        <a href="javascript:;">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                                <div class="chooseUs-card col-md-6">
+                                    <div class="chooseUs-item">
+                                        <img decoding="async" src="./images/innovation.svg" alt="Outcome-Driven Tech">
+                                        <span>Outcome-Driven Tech</span>
+                                        <h4>We don’t just sell tech—we rewire it for behavior and business outcomes.
+                                        </h4>
+                                        <a href="javascript:;">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section id="footer">
+                <div>
+                    <div class="footerlogo">
+                        <img src="images/shorewise-logo.png" alt="Shorewise Logo" class="footer-logo">
+                        <p>'The Future Won’t Wait. <br>Let’s Talk Today.'</p>
+                    </div>
+                    <div class="footerlinks">
+                        <h6>Services</h6>
+                        <ul class="footerList">
+                            <li><a class="dropdown-item" href="services.html#digitaltransformation">Digital
+                                    Transformation</a>
+                            </li>
+                            <li><a class="dropdown-item" href="services.html#fintechsolutions">Fintech Solutions</a>
+                            </li>
+                            <li><a class="dropdown-item" href="services.html#greenfield">Greenfield</a>
+                            </li>
+                            <li><a class="dropdown-item" href="services.html#tradefinance">Trade Finance</a></li>
+                            <li><a class="dropdown-item" href="services.html#corebanking">Core Banking</a></li>
+                            <li><a class="dropdown-item" href="services.html#datamanagement">Data Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerlinks">
+                        <h6>Links</h6>
+                        <ul class="footerList">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="javascrtipt:;">Products</a></li>
+                            <li><a href="javascrtipt:;">Services</a></li>
+                            <li><a href="javascrtipt:;">About Shorewise</a></li>
+                            <li><a href="javascrtipt:;">Contact Shorewise</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerContact">
+                        <h6>Contact Info</h6>
+                        <p>5919 Trussville Crossings Pkwy, new
+                            Dusting town, Austria</p>
+                        <ul class="footerContactList">
+                            <li>
+                                <div class="icons"><i class="fa fa-clock"></i></div>
+                                <div class="iconContents">
+                                    <h5>Opening Hours:</h5>
+                                    <p>Mon, 10:00 AM - 6:00 PM</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icons"><i class="fa fa-clock"></i></div>
+                                <div class="iconContents">
+                                    <h5>Phone:</h5>
+                                    <p>+91 00000 00000 </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    © 2025 Shorewise. All Rights Reserved.
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" class="scroll-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Toggle the compact sticky header on scroll
+        const compactHeader = document.getElementById('compact-header');
+        const compactNavbarContent = document.getElementById('compactNavbarContent');
+        let lastScrollY = window.scrollY;
+        const showAt = 120; // px scrolled before showing compact header
+
+        function updateCompactHeader() {
+            const currentY = window.scrollY;
+            const isMobile = window.innerWidth < 768; // treat below md as mobile
+
+            if (currentY > showAt && currentY > lastScrollY) {
+                // scrolling down past threshold -> show compact header
+                compactHeader.classList.add('show');
+                compactHeader.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('compact-header-visible');
+
+                // Note: do not auto-open the mobile menu; user should tap the toggler.
+            } else if (currentY <= showAt) {
+                // near top -> hide
+                compactHeader.classList.remove('show');
+                compactHeader.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('compact-header-visible');
+
+                // keep menu state controlled by the user; don't force close here
+            }
+            lastScrollY = currentY;
+        }
+
+        window.addEventListener('scroll', updateCompactHeader, { passive: true });
+
+
+        const swiper = new Swiper(".my-carousel", {
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            effect: "fade", // Try "slide", "fade", "cube", "coverflow"
+            fadeEffect: { crossFade: true },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            parallax: true,
+        });
+
+
+
+        // Get the button
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        // Show button on scroll
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top on click
+        scrollTopBtn.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+
+    </script>
+</body>
+
+</html>
