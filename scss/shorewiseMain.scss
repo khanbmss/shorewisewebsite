@@ -400,13 +400,15 @@ header.normal nav a {
     margin-left: 20px;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: var(--primary-950);
     // background-color: var(--primary-200);
     // background-color: var(--secondary-100);
     border-radius: 10px;
-    border: 0.5px solid  var(--primary-800);
+    border: 0.5px solid var(--primary-800);
 }
+
 #compact-header {
     position: fixed;
     top: 0;
@@ -524,6 +526,12 @@ body.compact-header-visible {
     z-index: 1099;
     /* ensure it's hidden by default (Bootstrap toggles the 'show' class) */
     display: none;
+     @media (max-width: 576px) and (max-width: 767px) {
+               position: fixed;
+            top: 60px;
+            width: 100%;
+    padding: 20px;
+        }
 }
 
 /* when bootstrap adds .show, display it */
@@ -1179,7 +1187,9 @@ nav a:hover {
             background-color: var(--primary-200);
             // background-color: var(--white-color--primary-40);
             border: 1px solid var(--primary-900);
+
             .iconsServices {
+
                 img,
                 svg {
                     color: var(--primary-900);
@@ -1210,6 +1220,7 @@ nav a:hover {
             }
         }
 
+
         .bottom {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1236,6 +1247,82 @@ nav a:hover {
             }
 
 
+        }
+    }
+
+    .container-fill-Service {
+        padding: 30px 30px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        border: 0.5px solid var(--neutral-200);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        &:hover {
+            box-shadow: 0 0 10px var(--primary-200);
+            background-color: var(--primary-200);
+            // background-color: var(--white-color--primary-40);
+            border: 1px solid var(--primary-900);
+
+            .iconsServicesMain {
+
+                img,
+                svg {
+                    color: var(--primary-900);
+                    margin-bottom: 20px;
+                }
+            }
+
+
+        }
+
+        .iconsServicesMain {
+            display: flex;
+            align-items: center;
+
+            img,
+            svg {
+                width: 300px;
+                height: 250px;
+                color: var(--primary-900);
+                border: 2px solid var(--secondary-950);
+                border-radius: 20px;
+                box-shadow: 10px 0 30px var(--primary-800);
+            }
+        }
+
+        .contentServicesMain {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 20px;
+
+            h4 {
+                font-size: var(--font-size-50);
+                margin-left: 20px;
+                color: var(--primary-800);
+
+                @media (max-width: 576px) and (max-width: 767px) {
+                    font-size: var(--font-size-30);
+                    margin-left: 0px;
+                }
+
+            }
+
+            p {
+                margin-left: 20px;
+            }
+
+            @media (max-width: 576px) and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) and (max-width: 767px) {
+            flex-direction: column;
         }
     }
 }
@@ -1652,7 +1739,8 @@ nav a:hover {
 .breadcrumb-area {
     padding: 150px 0;
     word-break: break-word;
-    h1{
+
+    h1 {
         font-size: var(--font-size-50);
     }
 }
@@ -1702,6 +1790,12 @@ nav a:hover {
     padding: 0 0;
     margin-bottom: 1rem;
     list-style: none;
+
+    nav {
+        @media (max-width: 576px) and (max-width: 767px) {
+            display: block;
+        }
+    }
 }
 
 .productsDetails {
@@ -1718,6 +1812,10 @@ nav a:hover {
         background-color: linear-gradient(273.55deg, rgba(66, 81, 111, .25) 2.92%, rgba(25, 29, 37, .25) 97.08%);
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
+
+        @media (max-width: 576px) and (max-width: 767px) {
+            flex-direction: column;
+        }
 
         &:hover {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1738,6 +1836,7 @@ nav a:hover {
                     margin-bottom: 20px;
                 }
             }
+
 
             .bottom {
                 h4 {
@@ -1798,4 +1897,228 @@ nav a:hover {
 
     }
 
+}
+
+#contactUsMain {
+    .contactUsCard01 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 37px;
+        background: linear-gradient(rgba(3, 82, 157, 0.8), rgba(178, 36, 48, 0.8)), url(../images/index-info-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        border-radius: 10px;
+        margin: 20px 0px;
+        height: 70vh;
+
+        i {
+            font-size: var(--font-size-50);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: var(--primary-900);
+            color: var(--white-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        h5 {
+            font-size: var(--font-size-20);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: var(--font-size-14);
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: var(--font-size-20);
+        }
+
+        @media (max-width: 576px) and (max-width: 767px) {
+            padding: 30px 20px;
+            margin: 10px 0px;
+            height: 40vh;
+        }
+    }
+
+    .contactUsCard02 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 37px;
+        background: linear-gradient(180deg, #7A85C1 0%, #1A2A80 100%), url(../images/index-info-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        border-radius: 10px;
+        margin: 20px 0px;
+        height: 70vh;
+
+        @media (max-width: 576px) and (max-width: 767px) {
+            padding: 30px 20px;
+            margin: 10px 0px;
+            height: 40vh;
+        }
+
+        i {
+            font-size: var(--font-size-50);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #3B38A0;
+            color: var(--white-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        h5 {
+            font-size: var(--font-size-20);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: var(--font-size-14);
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: var(--font-size-20);
+        }
+    }
+
+    .contactUsCard03 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 37px;
+        background: linear-gradient(180deg, #FCEF91 0%, #FB9E3A 100%), url(../images/index-info-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        border-radius: 10px;
+        margin: 20px 0px;
+        height: 70vh;
+
+        @media (max-width: 576px) and (max-width: 767px) {
+            padding: 30px 20px;
+            margin: 10px 0px;
+            height: 40vh;
+        }
+
+        i {
+            font-size: var(--font-size-50);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #E6521F;
+            color: var(--white-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        h5 {
+            font-size: var(--font-size-20);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: var(--font-size-14);
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: var(--font-size-20);
+        }
+    }
+}
+
+#contactMap {
+    background-color: var(--primary-200);
+    position: relative;
+
+    .backImages {
+        overflow: hidden;
+        height: 80vh;
+        background-image: url(../images/index-whyChoose.png);
+        background-repeat: no-repeat;
+        background-size: 150% auto;
+        opacity: 1;
+        background-position: top right;
+        padding: 10px 0px;
+
+        .contactForm {
+            background-color: var(--white-color);
+            border-radius: 6px;
+            padding: 20px;
+            z-index: 1000;
+            width: 38%;
+            position: absolute;
+
+            @media (max-width: 576px) and (max-width: 767px) {
+                // display: block;
+                top: 20%;
+                left: 15%;
+                width: 75%;
+            }
+
+            .titleHeader {
+                text-transform: uppercase;
+                color: var(--color-primary);
+                font-weight: 700;
+                background: linear-gradient(to right, var(--color-primary), var(--secondary-800), var(--color-primary));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 220% 150%;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                margin-left: 40px;
+                font-size: var(--font-size-24);
+
+                &::before {
+                    content: "\2192";
+                    /* Unicode for → */
+                    margin-right: 8px;
+                    font-size: 1.2em;
+                    color: var(--primary-950);
+                }
+            }
+        }
+    }
+
+    .google-maps {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 60%;
+        border-right: 2px solid var(--white);
+
+        @media (max-width: 576px) and (max-width: 767px) {
+            width: 100%;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 80vh;
+        }
+    }
 }

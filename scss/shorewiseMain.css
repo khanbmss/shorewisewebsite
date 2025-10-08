@@ -375,7 +375,8 @@ header.normal nav a {
   margin-left: 20px;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   color: var(--primary-950);
   border-radius: 10px;
   border: 0.5px solid var(--primary-800);
@@ -494,6 +495,14 @@ body.compact-header-visible {
   z-index: 1099;
   /* ensure it's hidden by default (Bootstrap toggles the 'show' class) */
   display: none;
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #compact-header .navbar-collapse {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 /* when bootstrap adds .show, display it */
@@ -1065,6 +1074,70 @@ nav a:hover {
   opacity: 0;
   padding-right: 15px;
 }
+#indexServices .container-fill-Service {
+  padding: 30px 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  border: 0.5px solid var(--neutral-200);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#indexServices .container-fill-Service:hover {
+  box-shadow: 0 0 10px var(--primary-200);
+  background-color: var(--primary-200);
+  border: 1px solid var(--primary-900);
+}
+#indexServices .container-fill-Service:hover .iconsServicesMain img,
+#indexServices .container-fill-Service:hover .iconsServicesMain svg {
+  color: var(--primary-900);
+  margin-bottom: 20px;
+}
+#indexServices .container-fill-Service .iconsServicesMain {
+  display: flex;
+  align-items: center;
+}
+#indexServices .container-fill-Service .iconsServicesMain img,
+#indexServices .container-fill-Service .iconsServicesMain svg {
+  width: 300px;
+  height: 250px;
+  color: var(--primary-900);
+  border: 2px solid var(--secondary-950);
+  border-radius: 20px;
+  box-shadow: 10px 0 30px var(--primary-800);
+}
+#indexServices .container-fill-Service .contentServicesMain {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+#indexServices .container-fill-Service .contentServicesMain h4 {
+  font-size: var(--font-size-50);
+  margin-left: 20px;
+  color: var(--primary-800);
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #indexServices .container-fill-Service .contentServicesMain h4 {
+    font-size: var(--font-size-30);
+    margin-left: 0px;
+  }
+}
+#indexServices .container-fill-Service .contentServicesMain p {
+  margin-left: 20px;
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #indexServices .container-fill-Service .contentServicesMain {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #indexServices .container-fill-Service {
+    flex-direction: column;
+  }
+}
 
 .scroll-top {
   position: fixed;
@@ -1475,6 +1548,11 @@ nav a:hover {
   margin-bottom: 1rem;
   list-style: none;
 }
+@media (max-width: 576px) and (max-width: 767px) {
+  .breadcrumb nav {
+    display: block;
+  }
+}
 
 .productsDetails .container-fill {
   padding: 30px 30px;
@@ -1489,6 +1567,11 @@ nav a:hover {
   background-color: linear-gradient(273.55deg, rgba(66, 81, 111, 0.25) 2.92%, rgba(25, 29, 37, 0.25) 97.08%);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  .productsDetails .container-fill {
+    flex-direction: column;
+  }
 }
 .productsDetails .container-fill:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1543,4 +1626,210 @@ nav a:hover {
 }
 .productsDetails .container-fill .contentProducts p strong {
   color: var(--secondary-400);
+}
+
+#contactUsMain .contactUsCard01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 37px;
+  background: linear-gradient(rgba(3, 82, 157, 0.8), rgba(178, 36, 48, 0.8)), url(../images/index-info-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 0px;
+  height: 70vh;
+}
+#contactUsMain .contactUsCard01 i {
+  font-size: var(--font-size-50);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-900);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+#contactUsMain .contactUsCard01 h5 {
+  font-size: var(--font-size-20);
+  margin-bottom: 20px;
+}
+#contactUsMain .contactUsCard01 p {
+  font-size: var(--font-size-14);
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+#contactUsMain .contactUsCard01 h4 {
+  font-size: var(--font-size-20);
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #contactUsMain .contactUsCard01 {
+    padding: 30px 20px;
+    margin: 10px 0px;
+    height: 40vh;
+  }
+}
+#contactUsMain .contactUsCard02 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 37px;
+  background: linear-gradient(180deg, #7A85C1 0%, #1A2A80 100%), url(../images/index-info-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 0px;
+  height: 70vh;
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #contactUsMain .contactUsCard02 {
+    padding: 30px 20px;
+    margin: 10px 0px;
+    height: 40vh;
+  }
+}
+#contactUsMain .contactUsCard02 i {
+  font-size: var(--font-size-50);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #3B38A0;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+#contactUsMain .contactUsCard02 h5 {
+  font-size: var(--font-size-20);
+  margin-bottom: 20px;
+}
+#contactUsMain .contactUsCard02 p {
+  font-size: var(--font-size-14);
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+#contactUsMain .contactUsCard02 h4 {
+  font-size: var(--font-size-20);
+}
+#contactUsMain .contactUsCard03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 37px;
+  background: linear-gradient(180deg, #FCEF91 0%, #FB9E3A 100%), url(../images/index-info-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 0px;
+  height: 70vh;
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #contactUsMain .contactUsCard03 {
+    padding: 30px 20px;
+    margin: 10px 0px;
+    height: 40vh;
+  }
+}
+#contactUsMain .contactUsCard03 i {
+  font-size: var(--font-size-50);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #E6521F;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+#contactUsMain .contactUsCard03 h5 {
+  font-size: var(--font-size-20);
+  margin-bottom: 20px;
+}
+#contactUsMain .contactUsCard03 p {
+  font-size: var(--font-size-14);
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+#contactUsMain .contactUsCard03 h4 {
+  font-size: var(--font-size-20);
+}
+
+#contactMap {
+  background-color: var(--primary-200);
+  position: relative;
+}
+#contactMap .backImages {
+  overflow: hidden;
+  height: 80vh;
+  background-image: url(../images/index-whyChoose.png);
+  background-repeat: no-repeat;
+  background-size: 150% auto;
+  opacity: 1;
+  background-position: top right;
+  padding: 10px 0px;
+}
+#contactMap .backImages .contactForm {
+  background-color: var(--white-color);
+  border-radius: 6px;
+  padding: 20px;
+  z-index: 1000;
+  width: 38%;
+  position: absolute;
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #contactMap .backImages .contactForm {
+    top: 20%;
+    left: 15%;
+    width: 75%;
+  }
+}
+#contactMap .backImages .contactForm .titleHeader {
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 700;
+  background: linear-gradient(to right, var(--color-primary), var(--secondary-800), var(--color-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 220% 150%;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin-left: 40px;
+  font-size: var(--font-size-24);
+}
+#contactMap .backImages .contactForm .titleHeader::before {
+  content: "→";
+  /* Unicode for → */
+  margin-right: 8px;
+  font-size: 1.2em;
+  color: var(--primary-950);
+}
+#contactMap .google-maps {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  border-right: 2px solid var(--white);
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  #contactMap .google-maps {
+    width: 100%;
+  }
+}
+#contactMap .google-maps iframe {
+  border: 0;
+  width: 100%;
+  height: 80vh;
 }/*# sourceMappingURL=shorewiseMain.css.map */
