@@ -11,6 +11,8 @@
     <!-- <link href="scss/frontendMain.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="scss/shorewiseMain.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -156,7 +158,7 @@
            <section id="contactUsMain">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4"  data-aos="fade-left" data-aos-duration="2000">
                             <div class="contactUsCard01">
                                 <i class="fa fa-phone"></i>
                                 <h5>Hotline</h5>
@@ -164,7 +166,7 @@
                                 <h4>+91 89390 39956</h4>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="fade-down" data-aos-duration="2000">
                             <div class="contactUsCard02">
                                 <i class="fa fa-location-dot"></i>
                                 <h5>Our Location</h5>
@@ -172,12 +174,12 @@
                                 <h4>Visit us at our corporate office.</h4>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="fade-right" data-aos-duration="2000">
                             <div class="contactUsCard03">
                                 <i class="fa fa-envelope"></i>
                                 <h5>Official Email</h5>
                                 <p>Empowering businesses through smarter digital solutions.</p>
-                                <h4>+91 89390 39956</h4>
+                                <h4>info@shorewise.com</h4>
                             </div>
                         </div>
                     </div>
@@ -223,7 +225,7 @@
             </div>
          </section>
            
-            <section id="contactAds">
+             <section id="contactAds">
                 <!-- <div class="container"> -->
                 <div>
                     <h4>Ready to transform your banking operations? </h4>
@@ -231,7 +233,7 @@
                         every level of your financial institution.</span>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-lg btnPrimary">Contact Us</button>
+                    <button type="button" class="btn btn-lg btnPrimary"  data-aos="fade-right" data-aos-duration="1000">Contact Us</button>
                 </div>
 
             </section>
@@ -280,10 +282,17 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="icons"><i class="fa fa-clock"></i></div>
+                                <div class="icons"><i class="fa-solid fa-phone"></i></div>
                                 <div class="iconContents">
                                     <h5>Phone:</h5>
                                     <p>+91 00000 00000 </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icons"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="iconContents">
+                                    <h5>Email:</h5>
+                                    <p>info@shorewise.com </p>
                                 </div>
                             </li>
                         </ul>
@@ -305,8 +314,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+         AOS.init();
         // Toggle the compact sticky header on scroll
         const compactHeader = document.getElementById('compact-header');
         const compactNavbarContent = document.getElementById('compactNavbarContent');

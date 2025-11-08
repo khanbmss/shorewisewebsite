@@ -377,9 +377,8 @@ header.normal nav a {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: var(--primary-950);
-  border-radius: 10px;
-  border: 0.5px solid var(--primary-800);
+  color: var(--secondary-600);
+  border-bottom: 3px solid var(--primary-800);
 }
 
 #compact-header {
@@ -928,6 +927,10 @@ nav a:hover {
     margin: 10px;
   }
 }
+#chooseUs .chooseUs-card .chooseUs-item a {
+  font-size: var(--font-size-14);
+  color: var(--color-primary);
+}
 #chooseUs .chooseUs-card h4 {
   font-size: 16px;
   font-weight: 700;
@@ -1095,6 +1098,11 @@ nav a:hover {
 #indexServices .container-fill-Service:hover .iconsServicesMain svg {
   color: var(--primary-900);
   margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+#indexServices .container-fill-Service:hover .iconsServicesMain img:hover,
+#indexServices .container-fill-Service:hover .iconsServicesMain svg:hover {
+  transform: scale(1.05);
 }
 #indexServices .container-fill-Service .iconsServicesMain {
   display: flex;
@@ -1118,12 +1126,16 @@ nav a:hover {
   font-size: var(--font-size-50);
   margin-left: 20px;
   color: var(--primary-800);
+  transition: all 0.3s ease;
 }
 @media (max-width: 576px) and (max-width: 767px) {
   #indexServices .container-fill-Service .contentServicesMain h4 {
     font-size: var(--font-size-30);
     margin-left: 0px;
   }
+}
+#indexServices .container-fill-Service .contentServicesMain h4:hover {
+  transform: scale(1.04);
 }
 #indexServices .container-fill-Service .contentServicesMain p {
   margin-left: 20px;
@@ -1371,6 +1383,7 @@ nav a:hover {
   padding: 2px 5px;
   font-size: var(--font-size-14);
   display: flex;
+  transition: all 0.3s ease;
 }
 #footer div .footerlinks ul.footerList li a {
   color: var(--white-color);
@@ -1383,7 +1396,10 @@ nav a:hover {
   color: var(--white-color);
 }
 #footer div .footerlinks ul.footerList li:hover {
-  border-bottom: 1px solid var(--primary-400);
+  transform: scale(1.08);
+}
+#footer div .footerlinks ul.footerList li:hover::after {
+  animation: shine 0.75s;
 }
 #footer div .footerlinks ul.footerList li .icons {
   margin-right: 20px;
@@ -1421,16 +1437,14 @@ nav a:hover {
   padding: 2px 5px;
   font-size: var(--font-size-13);
   display: flex;
-}
-#footer div .footerContact ul.footerContactList li:hover {
-  border-bottom: 1px solid var(--primary-400);
+  align-items: baseline;
 }
 #footer div .footerContact ul.footerContactList li .icons {
   margin-right: 20px;
 }
 #footer div .footerContact ul.footerContactList li .iconContents h5 {
   margin-right: 20px;
-  font-size: var(--font-size-20);
+  font-size: var(--font-size-16);
 }
 @media (max-width: 576px) and (max-width: 767px) {
   #footer div .footerContact ul.footerContactList li {
@@ -1453,7 +1467,7 @@ nav a:hover {
 #footer .copyright {
   display: flex;
   align-items: center;
-  padding: 0px 20px 10px;
+  padding: 0px 20px 0px;
   font-size: var(--font-size-12);
 }
 @media (max-width: 576px) and (max-width: 767px) {
@@ -1481,6 +1495,13 @@ nav a:hover {
 }
 #contactAds div {
   padding: 20px;
+}
+#contactAds div h4 {
+  font-size: var(--font-size-20);
+  transition: all 0.3s ease;
+}
+#contactAds div h4:hover {
+  transform: scale(1.04);
 }
 @media (max-width: 576px) and (max-width: 767px) {
   #contactAds div {
@@ -1619,6 +1640,12 @@ nav a:hover {
   border-radius: 20px;
   border: 1px solid #007bff;
   width: 300px;
+  transition: all 0.3s ease;
+}
+.productsDetails .container-fill .iconsProducts img:hover,
+.productsDetails .container-fill .iconsProducts svg:hover,
+.productsDetails .container-fill .iconsProducts i:hover {
+  transform: scale(1.04);
 }
 .productsDetails .container-fill .contentProducts h4 {
   font-size: var(--font-size-30);
@@ -1653,6 +1680,10 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   margin: 20px;
+  transition: all 0.3s ease;
+}
+#contactUsMain .contactUsCard01 i:hover {
+  transform: scale(1.04);
 }
 #contactUsMain .contactUsCard01 h5 {
   font-size: var(--font-size-20);
@@ -1705,6 +1736,10 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   margin: 20px;
+  transition: all 0.3s ease;
+}
+#contactUsMain .contactUsCard02 i:hover {
+  transform: scale(1.04);
 }
 #contactUsMain .contactUsCard02 h5 {
   font-size: var(--font-size-20);
@@ -1832,4 +1867,9 @@ nav a:hover {
   border: 0;
   width: 100%;
   height: 80vh;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: var(--font-size-16) !important;
 }/*# sourceMappingURL=shorewiseMain.css.map */

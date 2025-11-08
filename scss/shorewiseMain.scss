@@ -402,11 +402,12 @@ header.normal nav a {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: var(--primary-950);
+    color: var(--secondary-600);
     // background-color: var(--primary-200);
     // background-color: var(--secondary-100);
-    border-radius: 10px;
-    border: 0.5px solid var(--primary-800);
+    // border-radius: 10px;
+    border-bottom: 3px solid var(--primary-800);
+    // border: 0.5px solid var(--primary-800);
 }
 
 #compact-header {
@@ -526,12 +527,13 @@ body.compact-header-visible {
     z-index: 1099;
     /* ensure it's hidden by default (Bootstrap toggles the 'show' class) */
     display: none;
-     @media (max-width: 576px) and (max-width: 767px) {
-               position: fixed;
-            top: 60px;
-            width: 100%;
-    padding: 20px;
-        }
+
+    @media (max-width: 576px) and (max-width: 767px) {
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 /* when bootstrap adds .show, display it */
@@ -1054,6 +1056,26 @@ nav a:hover {
                 padding: 20px;
                 margin: 10px;
             }
+
+            a{
+                font-size: var(--font-size-14);
+                color: var(--color-primary);
+                // &::after{
+                //     content: "→";
+                //     position: absolute;
+                //     // right: -10px;
+                //     opacity: 0;
+                //     transition: all 0.3s ease;
+                // }
+                // &:hover {
+                // padding-right: 20px;
+                // color: #0056b3;
+                // &::after {
+                //     right: 10;
+                //     opacity: 1;
+                //     }
+                // }
+            }
         }
 
         h4 {
@@ -1273,7 +1295,11 @@ nav a:hover {
                 img,
                 svg {
                     color: var(--primary-900);
-                    margin-bottom: 20px;
+                    margin-bottom: 20px; 
+                    transition: all 0.3s ease;
+                    &:hover{
+                         transform: scale(1.05);
+                    }
                 }
             }
 
@@ -1304,12 +1330,14 @@ nav a:hover {
                 font-size: var(--font-size-50);
                 margin-left: 20px;
                 color: var(--primary-800);
-
+ transition: all 0.3s ease;
                 @media (max-width: 576px) and (max-width: 767px) {
                     font-size: var(--font-size-30);
                     margin-left: 0px;
                 }
-
+                &:hover{
+                    transform: scale(1.04);
+                }
             }
 
             p {
@@ -1596,6 +1624,7 @@ nav a:hover {
                     padding: 2px 5px;
                     font-size: var(--font-size-14);
                     display: flex;
+                    transition: all 0.3s ease;
 
                     a {
                         color: var(--white-color);
@@ -1612,7 +1641,13 @@ nav a:hover {
                     &:hover {
                         // background-color: var(--primary-400);
                         // color: var(--primary-950);
-                        border-bottom: 1px solid var(--primary-400);
+                        // border-bottom: 1px solid var(--primary-400);
+                        transform: scale(1.08);
+                        // transform: skewX(-25deg);
+
+                        &::after {
+                            animation: shine 0.75s;
+                        }
                     }
 
                     .icons {
@@ -1654,11 +1689,12 @@ nav a:hover {
                     padding: 2px 5px;
                     font-size: var(--font-size-13);
                     display: flex;
+                    align-items: baseline;
 
                     &:hover {
                         // background-color: var(--primary-400);
                         // color: var(--primary-950);
-                        border-bottom: 1px solid var(--primary-400);
+                        // border-bottom: 1px solid var(--primary-400);
                     }
 
                     .icons {
@@ -1668,7 +1704,7 @@ nav a:hover {
                     .iconContents {
                         h5 {
                             margin-right: 20px;
-                            font-size: var(--font-size-20);
+                            font-size: var(--font-size-16);
                         }
                     }
 
@@ -1695,7 +1731,7 @@ nav a:hover {
         display: flex;
         align-items: center;
         // background-color: var(--primary-400);
-        padding: 0px 20px 10px;
+        padding: 0px 20px 0px;
         font-size: var(--font-size-12);
 
         @media (max-width: 576px) and (max-width: 767px) {
@@ -1722,7 +1758,13 @@ nav a:hover {
 
     div {
         padding: 20px;
-
+        h4{
+            font-size: var(--font-size-20);
+            transition: all 0.3s ease;
+            &:hover{
+                transform: scale(1.04);
+            }
+        }
         @media (max-width: 576px) and (max-width: 767px) {
             display: flex;
             align-items: center;
@@ -1877,7 +1919,12 @@ nav a:hover {
                 border-radius: 20px;
                 border: 1px solid #007bff;
                 width: 300px;
+                 transition: all 0.3s ease;
                 // filter: invert(31%) sepia(85%) saturate(428%) hue-rotate(194deg) brightness(93%) contrast(91%);
+
+                &:hover{
+                    transform: scale(1.04);
+                }
             }
         }
 
@@ -1925,6 +1972,10 @@ nav a:hover {
             align-items: center;
             justify-content: center;
             margin: 20px;
+            transition: all 0.3s ease;
+            &:hover{
+                transform: scale(1.04);
+            }
         }
 
         h5 {
@@ -1980,6 +2031,10 @@ nav a:hover {
             align-items: center;
             justify-content: center;
             margin: 20px;
+            transition: all 0.3s ease;
+            &:hover{
+                transform: scale(1.04);
+            }
         }
 
         h5 {
@@ -2029,6 +2084,7 @@ nav a:hover {
             align-items: center;
             justify-content: center;
             margin: 20px;
+            
         }
 
         h5 {
@@ -2121,4 +2177,10 @@ nav a:hover {
             height: 80vh;
         }
     }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: var(--font-size-16) !important;
+
 }
