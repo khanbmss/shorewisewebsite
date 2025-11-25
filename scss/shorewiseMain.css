@@ -245,6 +245,18 @@ body {
   z-index: inherit;
 }
 
+ .widget-header-header-9{
+         display: none;
+    }
+
+#73419053-1186-44c0-948d-11d982a8b886, #71a5b96d-5d09-4403-9988-2116efa4263f{
+    display: none;
+    margin-top: -120px;
+    margin-bottom: -120px;
+}
+#mainNew{
+    height: 100%;
+}
 .bg-cover {
   background-position: center center !important;
   background-size: cover !important;
@@ -1329,6 +1341,12 @@ nav a:hover {
   color: var(--white-color);
   margin-bottom: 20px;
 }
+#ourSolutions .indexSolContents a {
+  color: var(--white-color);
+}
+#ourSolutions .indexSolContents a:hover {
+  color: var(--bg-gradient);
+}
 @media (max-width: 576px) and (max-width: 767px) {
   #ourSolutions {
     height: auto;
@@ -1428,8 +1446,8 @@ nav a:hover {
 }
 #footer div .footerContact ul.footerContactList {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -1438,17 +1456,39 @@ nav a:hover {
   font-size: var(--font-size-13);
   display: flex;
   align-items: baseline;
+  transition: all 0.3s ease;
 }
 #footer div .footerContact ul.footerContactList li .icons {
   margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer div .footerContact ul.footerContactList li .iconContents {
+  display: flex;
+  flex-direction: column;
 }
 #footer div .footerContact ul.footerContactList li .iconContents h5 {
-  margin-right: 20px;
+  margin: 0 0 4px 0;
   font-size: var(--font-size-16);
+  font-weight: 600;
 }
-@media (max-width: 576px) and (max-width: 767px) {
+#footer div .footerContact ul.footerContactList li .iconContents p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: var(--font-size-13);
+  line-height: 1.4;
+}
+@media (max-width: 767px) {
   #footer div .footerContact ul.footerContactList li {
     font-size: var(--font-size-16);
+  }
+  #footer div .footerContact ul.footerContactList li .icons {
+    margin-right: 10px;
+  }
+  #footer div .footerContact ul.footerContactList li .iconContents h5 {
+    font-size: var(--font-size-14);
   }
 }
 @media (max-width: 576px) and (max-width: 767px) {
