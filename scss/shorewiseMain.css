@@ -245,18 +245,7 @@ body {
   z-index: inherit;
 }
 
- .widget-header-header-9{
-         display: none;
-    }
-
-#73419053-1186-44c0-948d-11d982a8b886, #71a5b96d-5d09-4403-9988-2116efa4263f{
-    display: none;
-    margin-top: -120px;
-    margin-bottom: -120px;
-}
-#mainNew{
-    height: 100%;
-}
+ 
 .bg-cover {
   background-position: center center !important;
   background-size: cover !important;
@@ -1913,3 +1902,54 @@ nav a:hover {
 .swiper-button-prev:after {
   font-size: var(--font-size-16) !important;
 }/*# sourceMappingURL=shorewiseMain.css.map */
+
+
+.widget-header-header-9{
+         display: none;
+    }
+
+#73419053-1186-44c0-948d-11d982a8b886, #71a5b96d-5d09-4403-9988-2116efa4263f{
+    display: none;
+    margin-top: -120px;
+    margin-bottom: -120px;
+}
+#mainNew{
+    height: 100%;
+}
+
+.x .c1-i {
+    padding-bottom: 0px;
+}
+.x .c1-h {
+    padding-top: 0px;
+}
+
+.x .c1-a > div {
+    margin-left: 0px;
+}
+.x .c1-9 > div {
+    margin-bottom: 0px;
+}
+.x .c1-8 > div {
+    margin-right: 0px;
+}
+.x .c1-7 > div {
+    margin-top: -55px;
+}
+
+.x .c1-6 > div {
+    overflow: hidden;
+}
+.x .c1-5 > div {
+    position: relative;
+}
+
+.x *, .x :after, .x :before {
+    box-sizing: content-box !important;
+}
+
+.page-inner {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    height: 100vh !important;
+}
