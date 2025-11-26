@@ -1953,3 +1953,20 @@ nav a:hover {
     min-height: 100vh;
     height: 100vh !important;
 }
+
+@media (min-width: 1280px) {
+    .x .c1-z {
+        width: 100%;
+    }
+}
+
+.x .c1-v {
+    padding-right: 0px !important;
+}
+.x .c1-u {
+    padding-left: 0px !important;
+}
+
+#iframe-01{
+  height: 1300px !important;
+}
